@@ -1,0 +1,66 @@
+/* src/components/styles.css */
+body, html, #root {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the welcome container with background image and full viewport size */
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../image/europeana-5TK1F5VfdIk-unsplash.jpg'); /* Update this path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Center content with a semi-transparent background */
+  .welcome-content {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity for better readability */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Style for the main heading */
+  h1 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    color: #333; /* Add a color for better readability */
+  }
+  
+  /* Style for the button container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Style for the buttons with transitions */
+  .welcome-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Ensure transform transition is included */
+  }
+  
+  .welcome-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  .welcome-button:active {
+    background-color: #004494;
+    transform: translateY(1px); /* Adjust transform for active state */
+  }
